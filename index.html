@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+     <style>  
+        .line-through {  
+            text-decoration: line-through;  
+            color: gray;   
+        } 
+        body{
+            body {
+                font-family: "Nunito", sans-serif;
+      }
+        } 
+    </style> 
+</head>
+<body>
+<!--1ci hisse-->
+    <div class="mx-auto my-[22px] max-w-[390px]">
+        <div class=" flex  items-center">
+            <input type="text" id="taskInput" placeholder="Yeni iş əlavə et..." class="flex-1 outline-none h-[40px] border  border-[#E1E1E1] px-[5px]" >
+            <button id="addTaskButton" class="bg-[#13E328] text-white size-[40px] text-[15px]"><i class="fa-solid fa-plus"></i></button>
+         </div>
+    
+<!--#-->
+<!--butonlar-->
+<div class="flex items-center gap-x-[9px] my-[15px]  ">  
+    <button class="flex-1 bg-[#8F8F8F] h-[30px] rounded-lg  text-white text-[14px] leading-[19px] font-[700] " onclick="filterTasks('all')">Hamısı</button>  
+    <button class=" flex-1 border border-[#E1E1E1] h-[30px] rounded-lg  text-[#5C5C5C] text-[14px] leading-[19px] font-[700]" onclick="filterTasks('completed')">Tamamlananlar</button>  
+    <button class="flex-1 border border-[#E1E1E1] h-[30px] rounded-lg text-[#5C5C5C] text-[14px] leading-[19px] font-[700] " onclick="filterTasks('pending')">Gözləyən</button>  
+</div> 
+<!--#--> 
+<div>
+    <ul id="taskUl">  
+        <!-- yeni task burda yerləşdiriləcək -->  
+    </ul>
+
+</div>
+</div>
+
+    <script src="./app.js"></script>
+</body>
+</html> 
+ 
+
+     
+
+        
+
+        
+     
+
+    
+
